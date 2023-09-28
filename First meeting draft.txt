@@ -1,0 +1,50 @@
+public class Start {
+    public static void main(String[] args) {
+
+
+        /*Dati in ingresso*/
+
+        /*Stampa testo che descrive comandi disponibili*/
+
+
+        /*Chiamata al metodo selezione operazione*/
+
+        /*Stampa del risultato*/
+
+
+        System.out.println("Lista operazioni: ");
+        System.out.println("1 - Addizione");
+        System.out.println("2 - Sottrazione");
+
+
+    }
+
+
+    /* Metodo per selezione operazione con switch (??) */ // ALL TOGETHER
+
+
+
+    /*Metodo addizione*/ //RICKY
+        /*public static double addition(double num1, double num2) {} */
+
+
+    /*Metodo sottrazione*/ //TINO
+        /*public static double subtraction(double num1, double num2) {} */
+
+
+    /*Metodo moltiplicazione*/ //MARIA
+    /*public static double multiplication(double num1, double num2) {} */
+
+
+    /*Metodo divisione*/ //VALERIA
+    /*public static double division(double num1, double num2) {} */
+
+
+    /*Metodo potenza*/ //FABIO
+        /*public static double power(double num1, double num2) {} */
+
+
+    /*Metodo pari o dispari*/ //TINO
+        /*public static boolean evenOdd(int num)*/
+
+}
