@@ -15,9 +15,9 @@ public class Calculator {
     /* Metodo per selezione operazione con switch (??) */ // ALL TOGETHER
     // branch selection
     public static void selezione() {
-        Scanner in; // legge l'input da tastiera
-        /* crea l’oggetto che rappresenta la tastiera */
-        in = new Scanner(System.in);
+        /*Scanner in; // legge l'input da tastiera
+        // crea l’oggetto che rappresenta la tastiera
+        in = new Scanner(System.in);*/
         System.out.println("Scegli il tipo di operazione da eseguire. Digita il numero corrispondente.");
         System.out.println("1. Addizione");
         System.out.println("2. Sottrazione");
@@ -26,10 +26,13 @@ public class Calculator {
         System.out.println("5. Potenza");
         System.out.println("6. Pari/Dispari");
 
+        Scanner in; // legge l'input da tastiera
+        /* crea l’oggetto che rappresenta la tastiera */
+        in = new Scanner(System.in);
         int choose = in.nextInt();   // Lettura del valore digitato
         if (choose != 4){
             System.out.println("Il valore inserito non corrisponde ad una operazione, riprova");
-            return;
+            return; // AGGIUNGERE NUOVA RICHIESTA VALORE
         }
         switch(choose) {
            /* case 1: {
@@ -57,10 +60,11 @@ public class Calculator {
                 multiplication(num1, num2);
             }
             break;*/
-            case 4: {
+
+            case 4:
                 division();
-            }
-            break;
+                break;
+
             /*case 5: {
                 System.out.println("Inserisci il numero da elevare e la sua potenza");
                 // legge due numeri base ed esponente
@@ -78,8 +82,6 @@ public class Calculator {
             break;*/
             }
         }
-
-
 
 
     /*Metodo addizione*/ //RICKY
@@ -121,5 +123,12 @@ public class Calculator {
     /*Metodo pari o dispari*/ //TINO
     /*public static boolean evenOdd(int num)*/
 
+
+    //Funzione per l'INPUT di SINGOLO VALORE INT
+    public static void Scanner(){
+        Scanner in; // legge l'input da tastiera
+        /* crea l’oggetto che rappresenta la tastiera */
+        in = new Scanner(System.in);
+    }
 
 }
