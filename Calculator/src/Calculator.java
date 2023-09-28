@@ -15,9 +15,7 @@ public class Calculator {
     /* Metodo per selezione operazione con switch (??) */ // ALL TOGETHER
     // branch selection
     public static void selezione() {
-        /*Scanner in; // legge l'input da tastiera
-        // crea l’oggetto che rappresenta la tastiera
-        in = new Scanner(System.in);*/
+
         System.out.println("Scegli il tipo di operazione da eseguire. Digita il numero corrispondente.");
         System.out.println("1. Addizione");
         System.out.println("2. Sottrazione");
@@ -35,49 +33,29 @@ public class Calculator {
             return; // AGGIUNGERE NUOVA RICHIESTA VALORE
         }
         switch(choose) {
-           /* case 1: {
-                System.out.println("Inserisci due numeri");
-                // legge due numeri num1 e num2
-                double num1 = in.nextInt();
-                double num2 = in.nextInt();
-                addition(num1, num2);
-            }
-            break;*/
-            /*case 2: {
-                System.out.println("Inserisci due numeri");
-                // legge due numeri num1 e num2
-                double num1 = in.nextInt();
-                double num2 = in.nextInt();
-                subtraction(num1, num2);
-            }
-            break;*/
+
+           /* case 1:
+                addition();
+                break;*/
+
+            /*case 2:
+                subtraction();
+                break;*/
 
            /* case 3: {
-                System.out.println("Inserisci due numeri");
-                // legge due numeri num1 e num2
-                double num1 = in.nextInt();
-                double num2 = in.nextInt();
-                multiplication(num1, num2);
-            }
-            break;*/
+                multiplication();
+                break;*/
 
             case 4:
                 division();
                 break;
 
-            /*case 5: {
-                System.out.println("Inserisci il numero da elevare e la sua potenza");
-                // legge due numeri base ed esponente
-                double base = in.nextInt();
-                double exp = in.nextInt();
-                power(base, exp);
-            }
-            break;*/
+            /*case 5:
+                power();
+                break;*/
+
            /* case 6: {
-                System.out.println("Inserisci il numero da elevare e la sua potenza");
-                 legge un numero
-                double num = in.nextInt();
-                evenOdd(num);
+                evenOdd();
             }
             break;*/
             }
@@ -85,7 +63,11 @@ public class Calculator {
 
 
     /*Metodo addizione*/ //RICKY
-    /*public static double addition(double num1, double num2) {} */
+    /*public static double addition(double num1, double num2) {}
+    *   Scanner in; // legge l'input da tastiera
+        in = new Scanner(System.in);
+        double num1 = in.nextDouble();
+        double num2 = in.nextDouble();   */
 
 
     /*Metodo sottrazione*/ //TINO
@@ -125,10 +107,6 @@ public class Calculator {
 
 
     //Funzione per l'INPUT di SINGOLO VALORE INT
-    public static void Scanner(){
-        Scanner in; // legge l'input da tastiera
-        /* crea l’oggetto che rappresenta la tastiera */
-        in = new Scanner(System.in);
-    }
+
 
 }
