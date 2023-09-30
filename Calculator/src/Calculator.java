@@ -28,10 +28,15 @@ public class Calculator {
         /* crea l’oggetto che rappresenta la tastiera */
         in = new Scanner(System.in);
         int choose = in.nextInt();   // Lettura del valore digitato
-        if (choose != 4){
+        /*if (choose != 4){
             System.out.println("Il valore inserito non corrisponde ad una operazione, riprova");
             return; // AGGIUNGERE NUOVA RICHIESTA VALORE
-        }
+        }*/
+        System.out.println("Inserisci i numeri/o per i quali vuoi eseguire l'operazione selezionata.");
+        Scanner input; // legge l'input da tastiera
+        /* crea l’oggetto che rappresenta la tastiera */
+        input = new Scanner(System.in);
+
         switch(choose) {
 
            /* case 1:
@@ -42,9 +47,11 @@ public class Calculator {
                 subtraction();
                 break;*/
 
-           /* case 3: {
-                multiplication();
-                break;*/
+           case 3: //moltiplicazione
+               double number1 = input.nextDouble();   // Lettura del valore digitato
+               double number2 = input.nextDouble();
+               System.out.println("La moltiplicazione vale: " + multiplication(number1, number2));
+               break;
 
             case 4:
                 division();
@@ -75,7 +82,10 @@ public class Calculator {
 
 
     /*Metodo moltiplicazione*/ //MARIA
-    /*public static double multiplication(double num1, double num2) {} */
+    public static double multiplication(double num1, double num2) {
+        double result = num1 * num2;
+        return result;
+    }
 
 
     /*Metodo divisione*/ //VALERIA
