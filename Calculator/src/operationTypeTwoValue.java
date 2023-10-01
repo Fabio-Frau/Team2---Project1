@@ -20,6 +20,13 @@ public class operationTypeTwoValue {
                 break;
             case 3:
                 // classe MOLTIPLICAZIONE
+                System.out.println("Inserisci due numeri da moltiplicare.");
+                Scanner input;
+                input = new Scanner(System.in);
+                double num1 = input.nextDouble();
+                double num2 = input.nextDouble();
+                double result = MultiplicationNumber.multiplication(num1, num2);
+                System.out.println("Il risultato della moltiplicazione è: " + result);
                 break;
             case 4:
                 //CLASSE DIVISIONE
