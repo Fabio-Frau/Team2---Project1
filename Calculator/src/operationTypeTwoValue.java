@@ -9,54 +9,47 @@ public class operationTypeTwoValue {
 
         Scanner in;
         in = new Scanner(System.in);
-        int ch2 = numOperation(in);
 
-        switch (ch2) {
-            case 1:
-                //classe ADDIZIONE
-                break;
-            case 2:
-                //classe SOTTRAZIONE
-                break;
-            case 3:
-                // classe MOLTIPLICAZIONE
-                break;
-            case 4:
-                //CLASSE DIVISIONE
-                divisionN(in);
-                break;
-
-            case 5:
-                //CLASSE POTENZA
-                break;
-
-            case 6:
-                //CLASSE PARI O DISPARI
-                break;
-        }
+        numOperation(in);
     }
         public static int numOperation(Scanner in){
-            System.out.println("Digita 1 per una coppia di valori oppure 2 per un array: ");
-            int ch2 = in.nextInt();
-            if (ch2 == 1){
-                System.out.println("ADDIZIONE.");
-            } else if (ch2 == 2) {
-                System.out.println("SOTTRAZIONE.");
+            while (true) {
+                System.out.println("Seleziona il tipo di operazione da eseguire con i due valori.\n" +
+                        "1. Addizione \n2. Sottrazione \n3. Moltiplicazione \n4. Divisione \n5.Potenza \n6.Pari o dispari\n");
+                int ch2 = in.nextInt();
+                switch (ch2) {
+                    case 1:
+                        System.out.println("ADDIZIONE.");
+                        //CLASSE ADDIZIONE
+                         break;
+                    case 2:
+                        System.out.println("SOTTRAZIONE.");
+                        //CLASSE SOTTRAZIONE
+                        break;
+                    case 3:
+                        System.out.println("MOLTIPLICAZIONE.");
+                        //CLASSE MOLTIPLICAZIONE
+                        break;
+                    case 4:
+                        System.out.println("DIVISIONE.");
+                        //CLASSE DIVISIONE
+                        divisionN(in);
+                        break;
+                    case 5:
+                        System.out.println("POTENZA.");
+                        //CLASSE POTENZA
+                         break;
+                    case 6:
+                        System.out.println("PARI O DISPARI.");
+                        //CLASSE PARI O DISPARI
+                       break;
+                    default:
+                        System.out.println("Valore inserito non valido. Inserisci un nuovo valore: ");
+                        break;
+                }
             }
-            else if (ch2 == 3){
-                System.out.println("MOLTIPLICAZIONE.");
-            }else if (ch2 == 4){
-                System.out.println("DIVISIONE.");
-            } else if (ch2 == 5) {
-                System.out.println("POTENZA.");
-            } else if (ch2 == 6) {
-                System.out.println("PARI O DISPARI");
-            } else {
-                System.out.println("Valore inserito non valido. Inserisci un nuovo valore: ");
-                ch2 = in.nextInt();
-            }
-            return ch2;
         }
+
 
 
     // Imporatzione metodi addizione

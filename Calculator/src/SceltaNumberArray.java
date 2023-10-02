@@ -45,5 +45,3 @@ public class SceltaNumberArray {
         return choose;
     }
 }
-
-
