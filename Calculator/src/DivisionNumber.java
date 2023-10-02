@@ -3,7 +3,9 @@ public class DivisionNumber {
     public static void main(String[] args) {
         Scanner in;
         in = new Scanner(System.in);
+        System.out.println("Dividendo:");
         double dividendo = readNumber(in);
+        System.out.println("Divisore: ");
         double divisore = readNumber(in);
         while (divisore == 0){
             System.out.println("Il divisore non può essere nullo. Inserisci un nuovo valore");
