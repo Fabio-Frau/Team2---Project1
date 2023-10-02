@@ -8,49 +8,43 @@ public class operationTypeArray {
 
         Scanner in;
         in = new Scanner(System.in);
-        int ch3 = numOperationA(in);
-
-        switch (ch3) {
-            case 1:
-                // classe ADDIZIONE ARRAY
-                break;
-            case 2:
-                // classe SOTTRAZIONE ARRAY
-                break;
-            case 3:
-                // classe MOLTIPLICAZIONE ARRAY
-                break;
-            case 4:
-                // classe DIVISIONE ARRAY
-                divisionA(in);
-                break;
-            case 5:
-                // classe PARI O DISPARI ARRAY
-                break;
-        }
+        numOperationA(in);
     }
     public static int numOperationA(Scanner in){
-        System.out.println("Digita 1 per una coppia di valori oppure 2 per un array: ");
-        int ch3 = in.nextInt();
-        if (ch3 == 1){
-            System.out.println("ADDIZIONE.");
-        } else if (ch3 == 2) {
-            System.out.println("SOTTRAZIONE.");
+        while (true) {
+            System.out.println("Seleziona il tipo di operazione da eseguire con l'array.\n" +
+                    "1. Addizione \n2. Sottrazione \n3. Moltiplicazione \n4. Divisione \n5.Pari o dispari\n");
+            int ch3 = in.nextInt();
+            switch (ch3) {
+                case 1:
+                    System.out.println("ADDIZIONE.");
+                    //CLASSE ADDIZIONE
+                    break;
+                case 2:
+                    System.out.println("SOTTRAZIONE.");
+                    //CLASSE SOTTRAZIONE
+                    break;
+                case 3:
+                    System.out.println("MOLTIPLICAZIONE.");
+                    //CLASSE MOLTIPLICAZIONE
+                    break;
+                case 4:
+                    System.out.println("DIVISIONE.");
+                    //CLASSE DIVISIONE
+                    divisionA(in);
+                    break;
+                case 5:
+                    System.out.println("PARI O DISPARI.");
+                    //CLASSE PARI O DISPARI
+                    break;
+                default:
+                    System.out.println("Valore inserito non valido. Inserisci un nuovo valore: ");
+                    break;
+            }
         }
-        else if (ch3 == 3){
-            System.out.println("MOLTIPLICAZIONE.");
-        }else if (ch3 == 4){
-            System.out.println("DIVISIONE.");
-        } else if (ch3 == 5) {
-            System.out.println("PARI O DISPARI");
-        } else {
-            System.out.println("Valore inserito non valido. Inserisci un nuovo valore: ");
-            ch3 = in.nextInt();
-        }
-        return ch3;
     }
 
-
+// METODO DIVISIONE
     public static void divisionA(Scanner in){
         int dimension = DivisionArray.getArrayLength(in);
         double[] arrayDiv = new double[dimension];
