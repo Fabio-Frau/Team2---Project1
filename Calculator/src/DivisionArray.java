@@ -8,12 +8,16 @@ public class DivisionArray {
         int dimension = getArrayLength(in);
         double[] arrayDiv = new double[dimension];
 
-        getAndPrintArray(dimension, arrayDiv, in);
-        if (verDividendoValido(dimension, arrayDiv)) {
+        while(true) {
             getAndPrintArray(dimension, arrayDiv, in);
+            if (verDividendoValido(dimension, arrayDiv)) {
+                divisionArray(dimension, arrayDiv);
+                break;
+            } else {
+                continue;
+            }
+            }
         }
-        divisionArray(dimension, arrayDiv);
-    }
 
     /* Funzione che prende un input l'array ed esegue la divisione */
     public static void divisionArray(int dimension, double[] arrayDiv) {
