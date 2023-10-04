@@ -10,9 +10,9 @@ public class Calculator {
         Scanner in;
         in = new Scanner(System.in);
 
-        Power.power2Num(2,2);
+        SceltaNumberArray.SceltaNumberArray();
 
-        //SceltaNumberArray.SceltaNumberArray();
+
 
 
 

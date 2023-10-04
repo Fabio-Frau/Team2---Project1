@@ -3,9 +3,9 @@ public class DivisionNumber {
     public static void DivNum() {
         Scanner in;
         in = new Scanner(System.in);
-        System.out.println("Dividendo:");
+        System.out.println("Inserisci il valore del dividendo:");
         double dividendo = readNumber(in);
-        System.out.println("Divisore: ");
+        System.out.println("Inserisci il valore del divisore: ");
         double divisore = readNumber(in);
         while (divisore == 0){
             System.out.println("Il divisore non può essere nullo. Inserisci un nuovo valore");
@@ -16,7 +16,7 @@ public class DivisionNumber {
 
     // Funzione lettura numero double da tastiera
     public static double readNumber(Scanner in) {
-        System.out.println("Inserire i valori corrispondenti a dividendo e divisore:");
+        //System.out.println("Inserire i valori corrispondenti a dividendo e divisore:");
         double number = in.nextDouble();
         return (number);
     }
