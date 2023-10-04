@@ -2,15 +2,15 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MoltiplicazioneArray {
-    public static void main(String[] args) {
+    public static void MoltiplicationArray() {
         Scanner in;
         in = new Scanner(System.in);
 
         int dimension = getArrayLength(in);
 
-        double[] arrayMoult = new double[dimension];
-        getAndPrintArray(dimension, arrayMoult, in);
-        arrayMult(dimension, arrayMoult);
+        double[] arrayMolt = new double[dimension];
+        getAndPrintArray(dimension, arrayMolt, in);
+        arrayMult(dimension, arrayMolt);
 
         }
 
@@ -21,19 +21,19 @@ public class MoltiplicazioneArray {
         return dimension;
     }
 
-    public static void getAndPrintArray(int dimension, double[] arrayMoult, Scanner in) {
+    public static void getAndPrintArray(int dimension, double[] arrayMolt, Scanner in) {
         System.out.println("Inserisci gli elementi che compongono l'array:");
         for (int i = 0; i < dimension; i++) {
-            arrayMoult[i] = in.nextDouble();
+            arrayMolt[i] = in.nextDouble();
         }
-        System.out.println("Array: " + Arrays.toString(arrayMoult));
+        System.out.println("Array: " + Arrays.toString(arrayMolt));
     }
 
     public static void arrayMult(int dimension, double[] getAndPrintArray){
-       double moultRes = 1;
+       double moltRes = 1;
        for (int i = 0; i < dimension; i++){
-           moultRes *= getAndPrintArray[i];
+           moltRes *= getAndPrintArray[i];
        }
-        System.out.println("Il risultato della moltiplicazione tra gli elementi dell'array è " +moultRes);
+        System.out.println("Il risultato della moltiplicazione tra gli elementi dell'array è " +moltRes);
     }
 }

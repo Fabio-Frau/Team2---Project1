@@ -2,7 +2,7 @@
 import java.util.* ;
 import java.util.Arrays;
 public class operationTypeTwoValue {
-    public static void main(String[] args) {
+    public static void OperationTypeTwoValue() {
         /* Seleziona il tipo di operazione da eseguire con i due valori.
         1. Addizione, 2. Sottrazione 3. Moltiplicazione 4. Divisione 5.Potenza 6.Pari o dispari*/
 

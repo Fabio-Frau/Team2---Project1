@@ -1,7 +1,7 @@
 import java.util.* ;
 import java.util.Arrays;
 public class operationTypeArray {
-    public static void main(String[] args) {
+    public static void OperationTypeArray() {
 /* Seleziona il tipo di operazione da eseguire su array.
         1. Addizione, 2. Sottrazione 3. Moltiplicazione 4. Divisione 5.Pari o dispari*/
 
