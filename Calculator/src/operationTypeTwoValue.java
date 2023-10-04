@@ -17,7 +17,7 @@ public class operationTypeTwoValue {
     }
         public static  void numOperation(Scanner in){
             scelta : while (true) {
-                System.out.println("Seleziona il tipo di operazione da eseguire con i due valori.\n" +
+                System.out.println("\nSeleziona il tipo di operazione da eseguire con i due valori.\n" +
                         "0. Chiudi Calcolatrice \n1. Addizione \n2. Sottrazione \n3. Moltiplicazione \n4. Divisione \n5. Potenza \n6. Pari o dispari\n");
                 double num1;//Li ho dovuti definire da fuori altrimenti mi diceva che erano già definiti all'interno dei case
                 double num2;
@@ -53,8 +53,8 @@ public class operationTypeTwoValue {
                         break;
                     case 5:
                         System.out.println("POTENZA.");
-                        double base = Read.Double("Dammi la base: ");
-                        double esponente = Read.Double("Dammi l'esponente: ");
+                        double base = Read.numDouble("Dammi la base: ");
+                        double esponente = Read.numDouble("Dammi l'esponente: ");
                         System.out.println(Power.power2Num(base,esponente));
                          break ;
                     case 6:

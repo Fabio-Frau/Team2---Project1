@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e1800ef-bf48-40b4-920c-d2493963b0ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SceltaNumberArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SceltaNumberArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Read.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operationTypeArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/operationTypeArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operationTypeTwoValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/operationTypeTwoValue.java" afterDir="false" />
     </list>
