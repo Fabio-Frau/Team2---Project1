@@ -3,7 +3,7 @@ import java.util.* ;
 import java.util.Arrays;
 
 public class SceltaNumberArray {
-    public static void main(String[] args) {
+    public static void SceltaNumberArray() {
 
         /* Seleziona se lavorare sull'array o sul singolo valore
          * scegliere 1 per i singoli valori o 2 per l'array.*/
