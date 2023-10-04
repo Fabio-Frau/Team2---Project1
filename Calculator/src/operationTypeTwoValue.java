@@ -12,20 +12,20 @@ public class operationTypeTwoValue {
 
         numOperation(in);
     }
-        public static int numOperation(Scanner in){
-            while (true) {
+        public static  void numOperation(Scanner in){
+            scelta : while (true) {
                 System.out.println("Seleziona il tipo di operazione da eseguire con i due valori.\n" +
                         "1. Addizione \n2. Sottrazione \n3. Moltiplicazione \n4. Divisione \n5.Potenza \n6.Pari o dispari\n");
                 int ch2 = in.nextInt();
                 switch (ch2) {
                     case 1:
                         System.out.println("ADDIZIONE.");
-                        //CLASSE ADDIZIONE
-                         break;
+
+                         break scelta;
                     case 2:
                         System.out.println("SOTTRAZIONE.");
                         //CLASSE SOTTRAZIONE
-                        break;
+                        break scelta;
                     case 3:
                         System.out.println("MOLTIPLICAZIONE.");
                         //CLASSE MOLTIPLICAZIONE
@@ -37,8 +37,10 @@ public class operationTypeTwoValue {
                         break;
                     case 5:
                         System.out.println("POTENZA.");
-                        //CLASSE POTENZA
-                         break;
+                        double base = Read.Double("Dammi la base: ");
+                        double esponente = Read.Double("Dammi l'esponente: ");
+                        //System.out.println(Power.power2Num(base,esponente));
+                         break scelta;
                     case 6:
                         System.out.println("PARI O DISPARI.");
                         //CLASSE PARI O DISPARI
