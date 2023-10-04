@@ -19,23 +19,33 @@ public class operationTypeTwoValue {
             scelta : while (true) {
                 System.out.println("Seleziona il tipo di operazione da eseguire con i due valori.\n" +
                         "0. Chiudi Calcolatrice \n1. Addizione \n2. Sottrazione \n3. Moltiplicazione \n4. Divisione \n5. Potenza \n6. Pari o dispari\n");
+                double num1;//Li ho dovuti definire da fuori altrimenti mi diceva che erano già definiti all'interno dei case
+                double num2;
                 int ch2 = in.nextInt();
                 switch (ch2) {
                     case 1:
                         System.out.println("ADDIZIONE.");
                         System.out.println("Dammi il primo addendo:");
-                        double num1 = in.nextDouble();
+                        num1 = in.nextDouble();
                         System.out.println("Dammi il secondo addendo:");
-                        double num2 = in.nextDouble();
+                        num2 = in.nextDouble();
                         System.out.println("La somma è " + Somma2Num.sum(num1,num2));
                         break;
                     case 2:
                         System.out.println("SOTTRAZIONE.");
-                        //CLASSE SOTTRAZIONE
+                        System.out.println("Dammi il minuendo: ");
+                        num1 = in.nextDouble();
+                        System.out.println("Dammi il sottraendo: ");
+                        num2 = in.nextDouble();
+                        System.out.println("La differenza è " + SottrazioneNum.sottrazione(num1,num2));
                         break;
                     case 3:
                         System.out.println("MOLTIPLICAZIONE.");
-                        //CLASSE MOLTIPLICAZIONE
+                        System.out.println("Dammi il moltiplicando: ");
+                        num1 = in.nextDouble();
+                        System.out.println("Dammi il moltiplicatore: ");
+                        num2 = in.nextDouble();
+                        System.out.println("Il prodotto è " + MultiplicationNumber.multiplication(num1,num2));
                         break;
                     case 4:
                         System.out.println("DIVISIONE.");
@@ -49,7 +59,9 @@ public class operationTypeTwoValue {
                          break ;
                     case 6:
                         System.out.println("PARI O DISPARI.");
-                        //CLASSE PARI O DISPARI
+                        System.out.println("Dammi un numero ");
+                        int num = in.nextInt();
+                        pariDispariNum.pariDispari(num);
                        break;
                     case 0:
                         System.out.println("Chiusura calcolatrice");

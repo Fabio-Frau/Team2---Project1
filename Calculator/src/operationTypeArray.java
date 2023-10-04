@@ -14,11 +14,14 @@ public class operationTypeArray {
         while (true) {
             System.out.println("Seleziona il tipo di operazione da eseguire con l'array.\n" +
                     "1. Addizione \n2. Sottrazione \n3. Moltiplicazione \n4. Divisione \n5.Pari o dispari\n");
+
             int ch3 = in.nextInt();
             switch (ch3) {
                 case 1:
                     System.out.println("ADDIZIONE.");
-                    //CLASSE ADDIZIONE
+                    int dimension = DivisionArray.getArrayLength(in);
+                    double[] arrayDiv = new double[dimension];
+
                     break;
                 case 2:
                     System.out.println("SOTTRAZIONE.");
@@ -31,7 +34,8 @@ public class operationTypeArray {
                 case 4:
                     System.out.println("DIVISIONE.");
                     //CLASSE DIVISIONE
-                    divisionA(in);
+                    DivisionArray.DivArray();
+                    //divisionA(in);
                     break;
                 case 5:
                     System.out.println("PARI O DISPARI.");
@@ -44,14 +48,5 @@ public class operationTypeArray {
         }
     }
 
-// METODO DIVISIONE
-    public static void divisionA(Scanner in){
-        int dimension = DivisionArray.getArrayLength(in);
-        double[] arrayDiv = new double[dimension];
-        DivisionArray.getAndPrintArray(dimension, arrayDiv,in);
-        if (DivisionArray.verDividendoValido(dimension, arrayDiv)) {
-            DivisionArray.getAndPrintArray(dimension, arrayDiv, in);
-        }
-        DivisionArray.divisionArray(dimension,arrayDiv);
-    }
+
 }

@@ -19,7 +19,7 @@ public class SceltaNumberArray {
                 break;
             case 2:
                 operationTypeArray opArray = new operationTypeArray();
-                //divisionA(in);
+                operationTypeArray.numOperationA(in);
                 break;
         }
 
