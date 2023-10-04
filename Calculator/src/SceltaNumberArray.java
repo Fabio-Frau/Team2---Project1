@@ -23,10 +23,6 @@ public class SceltaNumberArray {
                 break;
         }
 
-      /*  DivisionNumber divNumber = new DivisionNumber();
-        DivisionArray divArray = new DivisionArray();
-        //singleNumberOrArray(in);
-      */
     }
 
     public static int chooseNumberOrArray(Scanner in) {

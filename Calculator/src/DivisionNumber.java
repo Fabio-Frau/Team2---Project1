@@ -1,6 +1,6 @@
-import java.util.Scanner;
+import java.util.* ;
 public class DivisionNumber {
-    public static void main(String[] args) {
+    public static void DivNum() {
         Scanner in;
         in = new Scanner(System.in);
         System.out.println("Dividendo:");
@@ -12,7 +12,6 @@ public class DivisionNumber {
             divisore = newDivisore(in,divisore);
         }
         division(dividendo,divisore);
-
     }
 
     // Funzione lettura numero double da tastiera
